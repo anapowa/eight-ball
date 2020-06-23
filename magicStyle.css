@@ -1,6 +1,77 @@
+body {
+    text-align: center;
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 1.5em;
+}
+
+h1 { font-family: ;
+}
+
+#description {
+padding-bottom: 30px;
+}
+
+#container {
+    display: inline-block;
+}
+
 #eightBall {
     background-color: black;
+    border-radius: 1000%;
+    width: 200px;
+    height: 200px;
+    padding: 5em;
+    justify-content: center;
+    border: 2px double blue ;
+    position: relative;
+
+}
+
+#luna {
+    background-color: whitesmoke;
     border-radius: 100%;
-    width: 500px;
-    height: 500px;
+    width: 8em;
+    height: 8em;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    /* border: 2px double blue; */
+}
+
+#eight {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 5em;
+    font-weight: bold;
+}
+
+#icosahedronTriangle {
+    position: absolute;
+    left: 50%;
+    top: 65%;
+    transform: translate(-50%, -50%);
+    font-size: 1em;
+    font-weight: lighter;
+    color: rgb(165,225,250);
+    border-radius: 100%;
+    width: 8em;
+    height: 8em;
+
+
+}
+
+#dark {
+    background-color: midnightblue;
+    border: 2px double blue ;
+    border-radius: 100%;
+    width: 8em;
+    height: 8em;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 45%;
 }
