@@ -75,20 +75,23 @@ let ball = document.querySelector("#eightBall")
 ball.addEventListener("click", function (evt) {
     const ballNode = evt.target
     let newFortuneText = document.createElement("div")
-    newFortuneText.id = "icosahedronTriangle"
+    newFortuneText.id = "icosahedronText"
     newFortuneNode = document.createTextNode(magic8())
     newFortuneText.appendChild(newFortuneNode)
         
-    let newFortuneBckgrnd = document.createElement("div")
-    newFortuneBckgrnd.id = "dark"
+    let newfortuneTriangle = document.createElement("div")
+    newfortuneTriangle.id = "triangle"
         
+    let newfortuneBkgrd = document.createElement("div")
+    newfortuneBkgrd.id = "dark"
+
     let eightBallNum = document.querySelector("#eight")
     let eightBallBckgrnd = document.querySelector("#luna")
         
+    // ball.appendChild(newFortuneText)
     ball.appendChild(newFortuneText)
-    ball.appendChild(newFortuneBckgrnd)
         
-    replaceFortBack = ball.replaceChild(newFortuneBckgrnd, eightBallBckgrnd)
+    replaceFortBack = ball.replaceChild(newfortuneTriangle, eightBallBckgrnd)
     replaceFortText = eightBallBckgrnd.replaceChild(newFortuneText, eightBallNum)
     console.log(replaceFortBack)
     console.log(replaceFortText)
