@@ -51,17 +51,26 @@ padding-bottom: 30px;
 #icosahedronText {
     position: absolute;
     left: 50%;
-    top: 52%;
+    top: 53%;
     transform: translate(-50%, -50%);
     font-size: 1em;
     font-weight: lighter;
     color: rgb(165,225,250);
     border-radius: 100%;
-    width: 8em;
+    width: 9em;
     height: 8em;
     box-sizing: border-box;
     padding: 2em;
-    opacity: 60%;
+    opacity: 80%;
+}
+
+#dark{
+    background-color: midnightblue;
+    border: 2px double blue ;
+    border-radius: 100%;
+    width: 8em;
+    height: 8em;
+    opacity: 30%;
 }
 
 #triangle {
@@ -80,8 +89,9 @@ padding-bottom: 30px;
     border-left: 3.5em solid transparent;
     border-right: 3.5em solid transparent;
     
-    border-top: 5.5em solid midnightblue;
+    border-top: 5.3em solid rgb(60,60,205);
 }
+
 
 aside {
     font-size: small;

@@ -1,6 +1,9 @@
 
 const icosahedronDie = Math.floor((Math.random() * 20) + 1)
 
+Linebreak = document.createElement("span")
+
+
 let magic8 = function() {
     switch (icosahedronDie) {
         case 1:
@@ -13,7 +16,7 @@ let magic8 = function() {
             return "Without a doubt"
             break;
         case 4:
-            return "Yes – definitely"
+            return "Yes –definitely"
             break;
         case 5:
             return "You may rely on it"
@@ -68,12 +71,14 @@ let magic8 = function() {
 
 }
 
-let ball = document.querySelector("#eightBall")
 
-    
+let ball = document.querySelector("#eightBall")
 
 ball.addEventListener("click", function (evt) {
     const ballNode = evt.target
+    
+    console.log(icosahedronDie + ": " + magic8())
+
     let newFortuneText = document.createElement("div")
     newFortuneText.id = "icosahedronText"
     newFortuneNode = document.createTextNode(magic8())
@@ -88,13 +93,13 @@ ball.addEventListener("click", function (evt) {
     let eightBallNum = document.querySelector("#eight")
     let eightBallBckgrnd = document.querySelector("#luna")
         
-    // ball.appendChild(newFortuneText)
-    ball.appendChild(newFortuneText)
-        
-    replaceFortBack = ball.replaceChild(newfortuneTriangle, eightBallBckgrnd)
+    ball.appendChild(newfortuneTriangle)
+    
     replaceFortText = eightBallBckgrnd.replaceChild(newFortuneText, eightBallNum)
+    ball.appendChild(newFortuneText)
+    replaceFortBack = ball.replaceChild(newfortuneTriangle, eightBallBckgrnd)
+    ball.appendChild(newfortuneBkgrd)
     console.log(replaceFortBack)
     console.log(replaceFortText)
 
 })
-// function oracle (evt)
