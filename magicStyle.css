@@ -97,3 +97,11 @@ aside {
     font-size: small;
     padding-top: 1em;
 }
+
+#refresh {
+    /* border: 1px  midnightblue; */
+    border-radius: 10%;
+    background-color: whitesmoke;
+    padding: 1em;
+    text-shadow: #191970 1px 0 10px;
+    opacity: 50%;

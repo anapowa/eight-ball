@@ -75,7 +75,7 @@ let magic8 = function() {
 let ball = document.querySelector("#eightBall")
 
 ball.addEventListener("click", function (evt) {
-    const ballNode = evt.target
+    // const ballNode = evt.target
     
     console.log(icosahedronDie + ": " + magic8())
 
@@ -99,7 +99,16 @@ ball.addEventListener("click", function (evt) {
     ball.appendChild(newFortuneText)
     replaceFortBack = ball.replaceChild(newfortuneTriangle, eightBallBckgrnd)
     ball.appendChild(newfortuneBkgrd)
+    
+    
     console.log(replaceFortBack)
     console.log(replaceFortText)
+
+})
+
+let refreshButton = document.querySelector("#refresh")
+refreshButton.addEventListener("click", function (evt){
+    // const buttonNode = evt.target
+    location.reload()
 
 })
